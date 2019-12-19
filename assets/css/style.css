@@ -1,0 +1,433 @@
+ body{
+	margin: 0;
+	padding: 0;
+	background-image: url("images/fond.jpg");
+	background-size: 100%;
+}
+label{
+	font-family: forte;
+	margin-right: 20px;
+	font-size: 25px;
+}
+.echecConnexion
+{
+	text-align: center;
+	color: red;
+	font-weight: bold;
+}
+.bloc_center
+{
+	background-color: rgba(88, 88, 88, 0.5);
+	color: #ffffff;
+	height: 70%;
+	width: 50%;
+	padding-right: 2px;
+	padding-left: 2px;
+	padding-bottom: 500px;
+	padding-top: 20px;
+	margin-top: 135px;
+	margin-left: 425px;
+	border-radius: 20px;
+	border: 0px solid white;
+}
+.indexForm
+{
+	text-align: center;
+}
+.inputForm
+{
+	width: 370px;
+	margin-top: 18px;
+	margin-bottom: 50px;
+	margin-left: 1px;
+	height: 33px;
+	border-radius: 5px;
+	border: 0.7px solid silver;
+	font-size: 17px;
+	font-family: forte;
+	text-align: center;
+}
+.image{
+	width: 90%;
+	height: 100px;
+}
+.imageUser{
+	width: 100px;
+	height: 100px;
+	float: right;
+}
+.fOp
+{
+	border: none;
+}
+.tabOp
+{
+	background: #fff;
+	width: 60%;
+	height: 50%;
+	margin-left: 250px;
+	font-family: forte;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 15px;
+}
+.tdOp
+{
+	text-align: center;
+	width: 40%;
+	height: 25px;
+	font-family: century;
+	font-size: 18px;
+	border: 0.5px solid black;
+	border-radius: 5px;
+}
+.btn
+{
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-family: forte;
+	background: #1512a2;
+	color: #555;
+	overflow: hidden;
+}
+.btn:hover
+{
+	color: #fff;
+	transition: 5s;
+}
+
+.btnCon{
+	height: 50px;
+	width: 150px;
+	background: #058d9e;
+	color: #fff;
+	font-size: 20px;
+	transform-style: preserve-3d;
+	transition: ease-in-out 2s;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.btnCon:hover
+{
+	transform: rotateX(360deg);
+}
+.btnCon:before
+{
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 6px;
+	right: : 6px;
+	bottom: : 6px;
+	border: 2px solid #fff;
+}
+.btnDeconnexion
+{
+	height: 40px;
+	width: 150px;
+	background: #f36967;
+	font-size: 17px;
+	font-family: forte;
+	transform-style: preserve-3d;
+	transition: ease-in-out 2s;
+	border-radius: 15px;
+	margin-top: 20px;
+}
+.btnDeconnexion:hover
+{
+	transform: rotateY(360deg);
+	cursor: pointer;
+	background: #ee4503;
+}
+.container
+{
+	padding: 10px;
+	border-radius: 25px;
+	width: 90%;
+	margin: 1%;
+	margin-left: 80px;
+	height: 90%;
+	text-align: center;
+	background-color: white;
+}
+.tableauPlein
+{
+	height: 80%;
+	width: 100%;
+}
+.tableauPlein td, .tableauPlein th
+{
+	text-align: center;
+	border: 0.5px solid black;
+}
+.tableauPlein td
+{
+	font-family: century;
+	font-size: 18px;
+	
+}
+.tableauPlein th
+{
+	background-color: #f2f2f2;
+	width: 17.5%;
+	font-family: ink free;
+	font-size: 25px;
+	color: #3da1be;
+}
+.tableauPlein th[id="action"]
+{
+	width: 30%;
+}
+.tableauPlein a
+{
+	text-decoration: none;
+	font-family: forte;
+	font-size: 20px;
+	color: #3da1be;
+	margin-left: 10px;
+}
+
+
+.tableauClient
+{
+	height: 80%;
+	width: 100%;
+}
+.tableauClient td, .tableauClient th
+{
+	text-align: center;
+	border: 0.5px solid black;
+}
+.tableauClient td
+{
+	font-family: century;
+	font-size: 18px;
+	
+}
+.tableauClient th
+{
+	background-color: #f2f2f2;
+	width: 14%;
+	font-family: ink free;
+	font-size: 25px;
+	color: #3da1be;
+}
+.tableauClient th[id="action"]
+{
+	width: 20%;
+}
+
+
+
+.champsNewC
+{
+	height: 30px;
+	width: 200px;
+	border-radius: 5px;
+	font-family: ink free;
+	padding-left: 10px;
+	font-size: 20px;
+	border: 0.5px solid black;
+}
+input[type="file"]
+{
+	height: 30px;
+	width: 200px;
+	border-radius: 5px;
+	font-family: ink free;
+	font-size: 20px;
+	border: 0.5px solid black;
+}
+select
+{
+	height: 30px;
+	width: 200px;
+	border-radius: 5px;
+	font-family: ink free;
+	padding-left: 10px;
+	font-size: 20px;
+	border: 0.5px solid black
+}
+.tab_complet
+{
+	height: 100%;
+	width: 100%;
+}
+.tdForm
+{
+	text-align: center;
+	padding: 5px;
+}
+.AccH1
+{
+	margin: 0;
+	padding: 0;
+	color: rgba(200, 200, 200, .5);
+	text-align: center;
+	font-size: 16em;
+}
+.ACspan
+{
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	animation: animate 2s linear infinite;
+}
+.ACspan:nth-child(1)
+{
+	animation-delay: 0s;
+}
+.ACspan:nth-child(2)
+{
+	animation-delay: 0.25s;
+}
+.ACspan:nth-child(3)
+{
+	animation-delay: 0.5s;
+}
+.ACspan:nth-child(4)
+{
+	animation-delay: 0.75s;
+}
+.ACspan:nth-child(5)
+{
+	animation-delay: 1s;
+}
+.ACspan:nth-child(6)
+{
+	animation-delay: 1.25s;
+}
+.ACspan:nth-child(7)
+{
+	animation-delay: 1.5s;
+}
+.ACspan:nth-child(8)
+{
+	animation-delay: 1.75s;
+}
+.ACspan:nth-child(9)
+{
+	animation-delay: 2s;
+}
+@keyframes animate
+{
+	0%,100%
+	{
+		color: rgba(156, 176, 192, .4);
+		filter: blur(2px);
+		text-shadow: 0 0 10px rgba(156, 176, 192, .8),
+		            0 0 20px rgba(156, 176, 192, .8),
+		            0 0 40px rgba(156, 176, 192, .8);
+		            
+	}
+	5%,95%
+	{
+		color: rgba(200, 200, 200, .5);
+		filter: blur(0px);
+		text-shadow: none;
+	}
+}
+.box
+{
+	width: 1200px;
+	height: 200px;
+	margin-left: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	overflow: hidden;
+	transform-style: preserve-3d;
+}
+.box.box1
+{
+	background: #2512c5;
+	transform-origin: right;
+	transform: perspective(500px) translateX(-50%) rotateY(-15deg);
+}
+.box.box2
+{
+	margin-top: -200px;
+	background: #1512a2;
+	transform-origin: left;
+	transform: perspective(500px) translateX(50%) rotateY(15deg);
+}
+.box h2
+{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	left: 0;
+	font-size: 5em;
+	animation: defiler 10s linear infinite;
+}
+.box.box1 h2
+{
+	color: #fff;
+	margin-left: 100%;
+}
+.box.box2 h2
+{
+	color: rgba(255, 255, 255, 0.2);
+	margin-left: 100%;
+	left: -100%;
+}
+@keyframes defiler
+{
+	0%
+	{
+		transform: translate(24000);
+	}
+	100%
+	{
+		transform: translateX(-150%);
+	}
+}
+section{
+	position: relative;
+	width: 100%;
+	height: 20vh;
+	background-position: center center;
+}
+header{
+	padding: 0 100px;
+	width: 100%;
+	height: 60%;
+	box-sizing: border-box;
+	background: rgba(0, 200, 255, .5);
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+	transition: .5s;
+}
+ul
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	float: right;
+	transition: .5s;
+}
+ul li{
+	list-style: none;
+}
+ul li a
+{
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin: 15px 0;
+	text-decoration: none;
+	color: #3da1be;
+	font-size: 20px;
+	font-weight: bold;
+	transition: .5s;
+}
+ul li a:hover
+{
+	background: #3da1be;
+	color: #fff;
+	border-radius: 10px;
+}
