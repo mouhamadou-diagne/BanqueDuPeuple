@@ -2,14 +2,14 @@
 	require_once '../model/modelUser.php';
 ?>
 <br><br>
-<div class="box box1" <?php if ($_SESSION['password'] == "passer1") {
+<div class="box box1" <?php if ($_SESSION['mdp'] == "passer") {
 		echo "hidden";
 	} ?>>
 	 <h2>
 	 	Dans cette page vous pouvez ajoutez des utilisateurs avec un mot de passe fixer à passer1 qu'ils pouront modifier dés qu'ils seront connecter
 	 </h2>
 </div>
-<div class="box box2" <?php if ($_SESSION['password'] == "passer1") {
+<div class="box box2" <?php if ($_SESSION['mdp'] == "passer") {
 		echo "hidden";
 	} ?>>
 	 <h2>

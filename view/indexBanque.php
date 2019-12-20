@@ -4,15 +4,14 @@
 	if ($_SESSION == NULL) {
 			header('location :/BanqueDuPeuple/index.php');
 		}
-	else if($_SESSION['password'] == 'passer1')
+	else if($_SESSION['mdp'] == 'passer')
 			{
 				include 'indexModUtilisateur.php';
 			}
 	else{
 		include '../topbar.php';
 		echo '<div class="container">';
-		echo '<img class="imageUser" src="/BanqueDuPeuple/assets/css/images/'.$_SESSION['photo'].'">';
-		echo "BONJOUR ".$_SESSION['nomComplet'];
+		echo "BONJOUR ".$_SESSION['nom'].$_SESSION['prenom'];
 		echo '<br>';
 		//var_dump($_SESSION);
 		if (isset($_GET['view'])) {

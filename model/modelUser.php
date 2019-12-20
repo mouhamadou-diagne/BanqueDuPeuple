@@ -1,27 +1,19 @@
 <?php 
 	require_once 'bd.php';
 	function verifierConnexion($login, $mdp){
-		$sql = "SELECT * FROM utilisateur WHERE login = '$login' and password = '$mdp'";
+		$sql = "SELECT * FROM userameth WHERE login = '$login' and mdp = '$mdp'";
 		global $bd;
 		return $bd -> query($sql) -> fetch();
 	}	
-	if (isset($_POST['ajoutUser'])) {
-		$photo = $_FILES['photo']['name'];
-		return $photo;
-	}
-	function insererUtilisateur($nom, $numero, $prenom, $login, $mdp, $profil, $photo){
-		$insert = "INSERT INTO utilisateur VALUES (null,'$numero','$nom','$prenom','$login','passer1','$profil','$photo')";
+	function insererUtilisateur($nom, $prenom, $login, $mdp){
+		$insert = "INSERT INTO userameth VALUES (null,'$numero','$nom','$prenom','$login')";
 		global $bd;
 		$bd -> exec($insert);
 		return $bd ->lastInsertId();
 	}
-	function modifierMotDePasse($mdp,$numero){
-		$sql = "UPDATE utilisateur SET password = '$mdp' WHERE numero='$numero'";
-		global $bd;
-		return $bd -> exec($sql);
-	}
+
 	function genererNumUser(){
-		$sql = "SELECT max(id) FROM utilisateur";
+		$sql = "SELECT max(id) FROM userameth";
 		global $bd;
 		$array = $bd -> query($sql) -> fetch();
 		if ($array == null) {
@@ -34,7 +26,7 @@
 		return $numero;
 	}
 	function getUserById($id){
-		$sql = "SELECT * FROM utilisateur WHERE id = '$id'";
+		$sql = "SELECT * FROM userameth WHERE id = '$id'";
 		global $bd;
 		return $bd -> query($sql) -> fetch();
 	}

@@ -1,6 +1,6 @@
 <?php
     $host = "localhost";
-    $dbname = "bd_finance_maison";
+    $dbname = "ameth";
     $user = "root";
     $mdp = "";
      try
